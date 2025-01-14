@@ -14,7 +14,24 @@
             color: brown;
         }
         ::placeholder{
-            color: blue;
+            color: rgba(0, 0, 255, 0.3);
+        }
+        .login_form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* border: 2px solid blueviolet; */
+            width: 40%;
+        }
+        .login_form input{
+            margin-top: 20px;
+        }
+        .login-container{
+            display: flex;
+            justify-content: center;
+            /* border: 1px solid salmon; */
+            align-items: center;
+            height: 90vh;
         }
     </style>
 </head>
@@ -22,17 +39,20 @@
     <nav>
         <div>
             <a href="">Home</a>
-        <a href="">Profile</a>
-        <a href="">Blog</a>
-        <a href="">About</a>
+            <a href="">Profile</a>
+            <a href="">Blog</a>
+            <a href="">About</a>
         </div>
         <a href="">Login</a>
     </nav>
 
-    <form>
-        <h3>Please Login</h3>
-        <input type="email" name="" id="" placeholder="Your Email">
-        <input type="password" name="" id="" placeholder="password lekh Halarbai">
-    </form>
+    <section class="login-container">
+        <form class="login_form">
+            <h3>Please Login</h3>
+            <input type="email" name="" id="" placeholder="Your Email" required>
+            <input type="password" name="" id="" placeholder="Your password">
+            <input type="submit" value="Login">
+        </form>
+    </section>
 </body>
 </html>
